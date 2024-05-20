@@ -3498,7 +3498,7 @@ double Class_Potential_Origin::EWSBVEV(const std::vector<double> &v) const
   for (std::size_t i = 0; i < NHiggs; i++)
   {
     double checkgauge = 0;
-    for (std::size_t j = 0; j < NGauge; j++)
+    for (std::size_t j = 0; j < NGauge - 1; j++)
     {
       checkgauge += std::abs(Curvature_Gauge_G2H2[j][j][i][i]);
     }
@@ -3519,7 +3519,7 @@ void Class_Potential_Origin::SetEWVEVZero(std::vector<double> &sol) const
   for (std::size_t i = 0; i < NHiggs; i++)
   {
     double checkgauge = 0;
-    for (std::size_t j = 0; j < NGauge; j++)
+    for (std::size_t j = 0; j < NGauge - 1; j++)
     {
       checkgauge += std::abs(Curvature_Gauge_G2H2[j][j][i][i]);
     }
