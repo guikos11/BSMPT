@@ -18,6 +18,7 @@
 #include <utility>   // for pair
 
 #include <BSMPT/models/ClassTemplate.h>
+#include <BSMPT/models/ClassPotentialVDM.h>
 #include <BSMPT/utility/Logger.h>
 
 namespace BSMPT
@@ -52,6 +53,9 @@ std::unique_ptr<Class_Potential_Origin> FChoose(ModelIDs choice,
     break;
   case ModelIDs::TEMPLATE:
     return std::make_unique<Class_Template>(smConstants);
+    break;
+  case ModelIDs::VDM:
+    return std::make_unique<Class_VDM>(smConstants);
     break;
   default: throw std::runtime_error("Invalid model");
   }
