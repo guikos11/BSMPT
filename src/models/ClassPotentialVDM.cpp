@@ -79,9 +79,9 @@ std::vector<std::string> Class_VDM::addLegendCT() const
   std::vector<std::string> labels;
   labels.push_back("dmuHSq");
   labels.push_back("dlambdaH");
+  labels.push_back("dkappa");
   labels.push_back("dmuSSq");
   labels.push_back("dlambdaS");
-  labels.push_back("dkappa");
   labels.push_back("dT1");
   labels.push_back("dT2");
   labels.push_back("dT3");
